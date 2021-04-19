@@ -1,0 +1,78 @@
+/* WHITE: #EDEDED */
+/* GRAY: #D5D5D5 */
+/* BLACK: #1D1D1D */
+/* BLACKER: #12020A */
+/* RED: #D42C2C */
+/* PURPLE: #4539F0 */
+
+a {
+  text-decoration: none;
+  /* Since we can't add a class from markdown */
+  border-bottom: 2px solid #1D1D1D;
+}
+
+code {
+  background-color: #D5D5D5;
+  padding: 1px 5px;
+  color: #1D1D1D;
+}
+
+pre {
+  background-color: #1D1D1D;
+  padding: 30px;
+  width: 80%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0px;
+  color: #EDEDED;
+  font-family: 'Fira Code', sans-serif;
+}
+
+blockquote {
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  margin-inline-start: 20px;
+  border-left: 5px solid #D5D5D5;
+}
+
+.blog-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.blog-image-small {
+  max-width: 300px;
+}
+
+.blog-image-medium {
+  max-width: 500px;
+}
+
+.blog-image-large {
+  max-width: 700px;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    border-color: #EDEDED;
+  }
+
+  pre {
+    background-color: #12020A;
+  }
+
+  #home-button {
+    /* We use padding instead of height and width to avoid unnecessary border around the image block. */
+    /* https://stackoverflow.com/a/33145301 */
+    padding: 12.5px 25px;
+    background: url("images/logo-dark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

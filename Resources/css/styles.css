@@ -1,0 +1,189 @@
+/* WHITE: #EDEDED */
+/* GRAY: #D5D5D5 */
+/* BLACK: #1D1D1D */
+/* BLACKER: #12020A */
+/* RED: #D42C2C */
+/* PURPLE: #4539F0 */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: #EDEDED;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, a {
+  color: #12020A;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+/*LAYOUT -- START*/
+
+#footer {
+  padding-top: 5%;
+  text-align: center;
+}
+
+#home-button {
+  /* We use padding instead of height and width to avoid unnecessary border around the image block. */
+  /* https://stackoverflow.com/a/33145301 */
+  padding: 12.5px 25px;
+  background: url("images/logo-light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  padding-top: 10%;
+  padding-bottom: 5%;
+  /*  Prevent text from reaching edges.*/
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.content {
+  max-width: 640px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/*LAYOUT -- END*/
+
+.article-link {
+  color: #D42C2C;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.article-publishing-date {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.underline {
+  border-bottom: 4px solid #1D1D1D;
+}
+
+.underline-thin {
+  border-bottom: 2px solid #1D1D1D;
+}
+
+.underline-purple {
+  border-color: #4539F0;
+}
+
+.underline-twitter-blue {
+  border-color: #1DA1F2;
+}
+
+.underline-linkedIn-blue{
+  border-color: #2867B2
+}
+
+.social-link {
+  margin: 20px;
+}
+
+/*TEXT STYLE -- START*/
+
+.title-XL {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.title-M {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.body-M {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.body-S {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+/*TEXT STYLE -- END*/
+
+/*DARK MODE -- START*/
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1D1D1D;
+  }
+
+  h1, h2, h3, h4, h5, p, a, ul, li {
+    color: #EDEDED;
+  }
+
+  .underline-thin {
+    border-color: #EDEDED;
+  }
+
+  .underline {
+    border-color: #EDEDED;
+  }
+
+  .underline-purple {
+    border-color: #4539F0;
+  }
+  
+  .underline-twitter-blue {
+    border-color: #1DA1F2;
+  }
+
+  .underline-linkedIn-blue{
+    border-color: #2867B2
+  }
+
+  #home-button {
+    /* We use padding instead of height and width to avoid unnecessary border around the image block. */
+    /* https://stackoverflow.com/a/33145301 */
+    padding: 12.5px 25px;
+    background: url("images/logo-dark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/*DARK MODE -- END*/
+
+@media (max-width: 414px) {
+  .wrapper {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    /*  Prevent text from reaching edges.*/
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
