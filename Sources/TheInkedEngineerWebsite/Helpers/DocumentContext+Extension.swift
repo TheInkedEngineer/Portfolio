@@ -17,4 +17,17 @@ extension Node where Context == HTML.DocumentContext {
       .link(.rel(.stylesheet), .href("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"))
     )
   }
+
+  /// Adds `Plausible.js` to a `.head` node.
+  /// - Parameter domain: The list of paths to join to form the data-domain value.
+  static func plausible(for paths: String...) -> Node {
+    .head(
+      .script(
+        .async(),
+        .defer(),
+        .attribute(named: "data-domain", value: "\(paths.joined(separator: "/"))"),
+        .src("https://plausible.io/js/plausible.js")
+      )
+    )
+  }
 }
