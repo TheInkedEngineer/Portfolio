@@ -16,7 +16,7 @@ extension Theme where Site == TheInkedEngineerWebsite {
         .lang(context.site.language),
         .head(for: index, on: context.site),
         .defaultFont(),
-        .plausible(for: context.site.url.host!),
+        .plausible(),
         HTMLBody.code(for: index, context: context)
       )
     }
@@ -26,7 +26,7 @@ extension Theme where Site == TheInkedEngineerWebsite {
         .lang(context.site.language),
         .head(for: section, on: context.site),
         .defaultFont(),
-        .plausible(for: context.site.url.host!, section.path.string),
+        .plausible(),
         HTMLBody.code(for: section)
       )
     }
@@ -36,7 +36,7 @@ extension Theme where Site == TheInkedEngineerWebsite {
         .lang(context.site.language),
         .head(for: item, on: context.site, stylesheetPaths: ["/styles.css", "/articles.css"]),
         .articlesFonts(),
-        .plausible(for: context.site.url.host!, item.path.string),
+        .plausible(),
         HTMLBody.code(for: item)
       )
     }
