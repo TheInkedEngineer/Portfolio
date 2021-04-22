@@ -19,10 +19,15 @@ code {
 
 pre {
   background-color: #1D1D1D;
-  padding: 30px;
-  width: 80%;
+  padding: 5%;
+  width: 90%;
   margin: 0 auto;
   overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
 
 pre code {
@@ -32,11 +37,17 @@ pre code {
   font-family: 'Fira Code', sans-serif;
 }
 
+ul {
+  list-style-type: disc;
+}
+
 blockquote {
   padding-inline-start: 20px;
   padding-inline-end: 20px;
   margin-inline-start: 20px;
   border-left: 5px solid #D5D5D5;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .blog-image {
