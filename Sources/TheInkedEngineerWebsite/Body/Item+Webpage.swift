@@ -8,7 +8,7 @@ extension HTMLBody {
         .content(
           .contentBody(item.body)
         ),
-        HTMLBody.footer()
+        HTMLBody.footer(canGoBack: true)
       )
     )
   }

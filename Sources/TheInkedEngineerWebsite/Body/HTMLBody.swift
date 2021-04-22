@@ -6,9 +6,22 @@ enum HTMLBody {}
 
 extension HTMLBody {
   /// The footer present in the bottom of pages.
-  static func footer() -> Node<HTML.BodyContext> {
+  /// - Parameter canGoBack: if `true` a back button will be shown as well.
+  static func footer(canGoBack: Bool = false) -> Node<HTML.BodyContext> {
     .content(
       .id(CSS.footer),
+      .if(
+        canGoBack,
+        .a(
+          .img(
+            // We add the source in the `CSS` file to have it programmatically change based on light/dark mode.
+            .id(CSS.backButton),
+            .src("/images/back.png")
+          ),
+          .href("../"),
+          .style("border-bottom: 0")
+        )
+      ),
       .a(
         .img(
           // We add the source in the `CSS` file to have it programmatically change based on light/dark mode.

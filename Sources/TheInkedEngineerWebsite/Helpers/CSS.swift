@@ -9,6 +9,7 @@ enum CSS {
   static let content = "content"
   static let wrapper = "wrapper"
   static let footer = "footer"
+  static let backButton = "back-button"
 
   static let bodyM = "body-M"
   static let bodyS = "body-S"

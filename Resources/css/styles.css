@@ -60,6 +60,11 @@ li {
   background-size: cover;
 }
 
+#back-button {
+  height: 25px;
+  padding-right: 50px;
+}
+
 .wrapper {
   padding-top: 10%;
   padding-bottom: 5%;
@@ -173,6 +178,11 @@ li {
     background: url("images/logo-dark.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  #back-button {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
   }
 }
 
