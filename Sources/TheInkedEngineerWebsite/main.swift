@@ -22,7 +22,7 @@ struct TheInkedEngineerWebsite: Website {
   var name = "The Inked Engineer"
   var description = "A personal portfolio and blog"
   var language: Language { .english }
-  var imagePath: Path? { nil }
+  var imagePath: Path? { "social.png" }
 }
 
 // This will generate the website using the custom theme:
