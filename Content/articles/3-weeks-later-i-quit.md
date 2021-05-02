@@ -69,7 +69,7 @@ Below is a screenshot of a conversation I had with one of those colleagues:
 
 It translates to the following:
 
-```
+```no-highlight
 ME: just an info, let url = link != nil ? link! : .homepage is better written as let url = link ?? .homepage
 
 Him: yeah yea as you wish

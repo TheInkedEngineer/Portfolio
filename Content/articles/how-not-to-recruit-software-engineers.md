@@ -21,13 +21,13 @@ for a final client as a Software Engineer.
 
 The message was the following:
 
-```
+```no-highlight
 Buonasera, le chiedo gentilmente il cv perchè vorrei parlarle di un’opportunità su Milano, società finale, SW Engineer. Grazie (email)
 ```
 
 which roughly translates to:
 
-```
+```no-highlight
 Good evening, I would like to kindly ask you for you CV because I would like to discuss with you an opportunity in Milan for a final client as a SW Engineer. Thanks (email)
 ```
 
@@ -52,7 +52,7 @@ I usually never answer to such messages on LinkedIn because I feel they are noth
 But it was a Tuesday night, 9:55 p.m precisely, I had no plans and I am currently looking for a job, so I was like fuck it, let’s see where that goes. 
 So I sent her an email, with my curriculum attached and kindly asking for more information. It went something like this:
 
-```
+```no-highlight
 Ciao -----,
 come da te richiesto su LinkedIn, ecco una copia del mio curriculum!
 Intanto potresti dirmi qualcosa in più riguardo la posizione?
@@ -62,7 +62,7 @@ Firas
 
 which translates to
 
-```
+```no-highlight
 Hello ----, 
 As per your request, here is a copy of my curriculum!
 Meanwhile, would you please tell me more regarding the position?
@@ -82,7 +82,7 @@ not that either,
 
 After less than 10 minutes, precisely at 10:04 pm, she replies with the following message:
 
-```
+```no-highlight
 Grazie,
 Ti giro gentilmente la RAL bonus e benefits. Inoltre quanto conosci Restful infrastruttura a microservizi.
 La posizione è quella di SW Engineer.
@@ -92,7 +92,7 @@ Grazie e attendo tue,
 
 which translates to 
 
-```
+```no-highlight
 Thanks, 
 Can you please tell me your RAL, bonuses and benefits? Moreover how much do you know about micro-service RESTful infrastructure?
 The position is for a SW Engineer.

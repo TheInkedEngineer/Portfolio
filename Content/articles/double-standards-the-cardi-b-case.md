@@ -26,7 +26,7 @@ She faced little to no backlash. What made things even worse for me, was the sta
 
 Here is the full statement:
 
-```
+```no-highlight
 I’m seeing on social media that a Live I did 3 years ago has popped back up. A Live where I talked about things I have to do in my past, I never claim to be perfect or come from a perfect world with a perfect past. I always speak my truth [and] I always own my shit.
 
 I’m apart of a hip hop culture where you can talk about where you come from, talk about the wrong things you had to do to get where you are. I never glorified the things I brought up in that Live. I have never even put those things in my music because I’m not proud of it.

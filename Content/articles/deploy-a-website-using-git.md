@@ -10,7 +10,7 @@ This a step by step tutorial, teaching you how to leverage *Git* to deploy your 
 
 Open your terminal and login to your server using the following command:
 
-```bash
+```no-highlight
 ssh your_user@server_ip_address
 ```
 
@@ -26,7 +26,7 @@ This command will prompt you to insert your password. Once you do, you are logge
 
 To install *Git* on the server run the following commands
 
-```bash
+```no-highlight
 #1
 apt-get update
 
@@ -45,7 +45,7 @@ If you run into permission problems, good old *sudo + password* should solve the
 
 The source code to your website needs to be put somewhere. By convention, code goes inside the */var/www* directory.
 
-```bash
+```no-highlight
 #1
 cd /var/www
 
@@ -61,7 +61,7 @@ This path will come in handy when setting up the *Git* repository.
 
 ## 4. Initialise a Git repository on your server
 
-```bash
+```no-highlight
 #1
 mkdir -p /var/repo/website_name.git
 
@@ -87,7 +87,7 @@ We are interested in the *post-receive* hook which is invoked after the reposito
 
 From the *website\_name.git* folder run the following commands:
 
-```bash
+```no-highlight
 #1
 cd hooks
 
@@ -104,7 +104,7 @@ nano post-receive
 
 Inside of the editor, copy the following code:
 
-```bash
+```no-highlight
 #1
 #!/bin/sh
 
@@ -133,7 +133,7 @@ If it's not already, just run `git init`.
 
 To push the code to the remote server, run:
 
-```bash
+```no-highlight
 git remote add name_of_repository ssh://your_user@server_ip_address/path_to_git_directory
 ```
 - *name\_of\_repository* can be anything you want.
