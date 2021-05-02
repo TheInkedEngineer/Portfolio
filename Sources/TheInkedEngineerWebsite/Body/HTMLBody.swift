@@ -29,6 +29,13 @@ extension HTMLBody {
         ),
         .href("/"),
         .style("border-bottom: 0")
+      ),
+      .p(
+        .externalLink(
+          .text("@inkedengineer"),
+          .classes(CSS.underline, CSS.underlineThin, CSS.underlineTwitterBlue, CSS.socialLink),
+          .href("https://twitter.com/inkedengineer")
+        )
       )
     )
   }

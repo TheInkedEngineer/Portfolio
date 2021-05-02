@@ -1,24 +1,34 @@
-/* WHITE: #EDEDED */
-/* GRAY: #D5D5D5 */
-/* BLACK: #1D1D1D */
-/* BLACKER: #12020A */
-/* RED: #D42C2C */
-/* PURPLE: #4539F0 */
+:root {
+  --WHITE: #EDEDED;
+  --GRAY: #D5D5D5;
+  --BLACK: #1D1D1D;
+  --BLACKER: #12020A;
+  
+  --code-keyword-color: #FC5FA3;
+  --code-number-color: #D0BF69;
+  --code-string-color: #D0BF69;
+  --code-type-color: #9EF1DD;
+  --code-dotaccess-color: #67B7A4;
+  --code-property-color: #326d74;
+  --code-call-color: #67B7A4;
+  --code-comment-color: #6C7986;
+  --code-preprocessing-color: #643820;
+}
 
 a {
   text-decoration: none;
   /* Since we can't add a class from markdown */
-  border-bottom: 2px solid #1D1D1D;
+  border-bottom: 2px solid var(--BLACK);
 }
 
 code {
-  background-color: #D5D5D5;
+  background-color: var(--GRAY);
   padding: 1px 5px;
-  color: #1D1D1D;
+  color: var(--BLACK);
 }
 
 pre {
-  background-color: #1D1D1D;
+  background-color: var(--BLACK);
   padding: 5%;
   width: 90%;
   margin: 0 auto;
@@ -33,7 +43,7 @@ pre {
 pre code {
   background-color: transparent;
   padding: 0px;
-  color: #EDEDED;
+  color: var(--WHITE);
   font-family: 'Fira Code', sans-serif;
 }
 
@@ -45,7 +55,7 @@ blockquote {
   padding-inline-start: 20px;
   padding-inline-end: 20px;
   margin-inline-start: 20px;
-  border-left: 5px solid #D5D5D5;
+  border-left: 5px solid var(--GRAY);
   margin-top: 3em;
   margin-bottom: 3em;
 }
@@ -71,11 +81,11 @@ blockquote {
 
 @media (prefers-color-scheme: dark) {
   a {
-    border-color: #EDEDED;
+    border-color: var(--WHITE);
   }
 
   pre {
-    background-color: #12020A;
+    background-color: var(--BLACKER);
   }
 
   #home-button {
@@ -86,4 +96,42 @@ blockquote {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+/*SWIFT SYNTAX*/
+
+.swift-keyword {
+  color: var(--code-keyword-color);
+}
+
+.swift-number {
+  color: var(--code-number-color);
+}
+
+.swift-string {
+  color: var(--code-string-color);
+}
+
+.swift-type {
+  color: var(--code-type-color);
+}
+
+.swift-dotAccess {
+  color: var(--code-dotAccess-color);
+}
+
+.swift-property {
+  color: var(--code-property-color);
+}
+
+.swift-call {
+  color: var(--code-call-color);
+}
+
+.swift-comment {
+  color: var(--code-comment-color);
+}
+
+.swift-preprocessing {
+  color: var(--code-preprocessing-color);
 }

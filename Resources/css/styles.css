@@ -1,9 +1,10 @@
-/* WHITE: #EDEDED */
-/* GRAY: #D5D5D5 */
-/* BLACK: #1D1D1D */
-/* BLACKER: #12020A */
-/* RED: #D42C2C */
-/* PURPLE: #4539F0 */
+:root {
+  --WHITE: #EDEDED;
+  --BLACK: #1D1D1D;
+  --BLACKER: #12020A;
+  --RED: #D42C2C;
+  --PURPLE: #4539F0;
+}
 
 html, body {
   height: 100%;
@@ -14,12 +15,12 @@ html, body {
 }
 
 body {
-  background-color: #EDEDED;
+  background-color: var(--WHITE);
   font-family: 'Fira Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, p, a {
-  color: #12020A;
+  color: var(--BLACKER);
 }
 
 h1 {
@@ -66,7 +67,7 @@ li {
 }
 
 .wrapper {
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 5%;
   /*  Prevent text from reaching edges.*/
   margin-left: 16px;
@@ -82,7 +83,7 @@ li {
 /*LAYOUT -- END*/
 
 .article-link {
-  color: #D42C2C;
+  color: var(--RED);
   font-weight: 700;
   font-size: 1.2em;
 }
@@ -93,15 +94,15 @@ li {
 }
 
 .underline {
-  border-bottom: 4px solid #1D1D1D;
+  border-bottom: 4px solid var(--BLACK);
 }
 
 .underline-thin {
-  border-bottom: 2px solid #1D1D1D;
+  border-bottom: 2px solid var(--BLACK);
 }
 
 .underline-purple {
-  border-color: #4539F0;
+  border-color: var(--PURPLE);
 }
 
 .underline-twitter-blue {
@@ -144,23 +145,23 @@ li {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #1D1D1D;
+    background-color: var(--BLACK);
   }
 
   h1, h2, h3, h4, h5, p, a, ul, li {
-    color: #EDEDED;
+    color: var(--WHITE);
   }
 
   .underline-thin {
-    border-color: #EDEDED;
+    border-color: var(--WHITE);
   }
 
   .underline {
-    border-color: #EDEDED;
+    border-color: var(--WHITE);
   }
 
   .underline-purple {
-    border-color: #4539F0;
+    border-color: var(--PURPLE);
   }
   
   .underline-twitter-blue {

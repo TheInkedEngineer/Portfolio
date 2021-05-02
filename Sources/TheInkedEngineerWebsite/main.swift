@@ -1,6 +1,7 @@
 import Foundation
 import Publish
 import Plot
+import SplashPublishPlugin
 
 struct TheInkedEngineerWebsite: Website {
   enum SectionID: String, WebsiteSectionID {
@@ -22,8 +23,12 @@ struct TheInkedEngineerWebsite: Website {
   var name = "The Inked Engineer"
   var description = "A personal portfolio and blog"
   var language: Language { .english }
-  var imagePath: Path? { "social.png" }
+  var imagePath: Path? { "images/social.png" }
 }
 
 // This will generate the website using the custom theme:
-try TheInkedEngineerWebsite().publish(withTheme: .tie)
+try TheInkedEngineerWebsite().publish(
+  withTheme: .tie,
+  indentation: .spaces(2),
+  plugins: [.splash(withClassPrefix: "swift-")]
+)

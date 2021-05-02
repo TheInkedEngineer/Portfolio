@@ -14,7 +14,7 @@ extension Theme where Site == TheInkedEngineerWebsite {
     func makeIndexHTML(for index: Index, context: PublishingContext<TheInkedEngineerWebsite>) throws -> HTML {
       HTML(
         .lang(context.site.language),
-        .head(for: index, on: context.site),
+        .head(for: index, on: context.site, rssFeedPath: "/rss"),
         .defaultFont(),
         .plausible(),
         HTMLBody.code(for: index, context: context)
@@ -24,7 +24,7 @@ extension Theme where Site == TheInkedEngineerWebsite {
     func makeSectionHTML(for section: Section<TheInkedEngineerWebsite>, context: PublishingContext<TheInkedEngineerWebsite>) throws -> HTML {
       HTML(
         .lang(context.site.language),
-        .head(for: section, on: context.site),
+        .head(for: section, on: context.site, rssFeedPath: "/rss"),
         .defaultFont(),
         .plausible(),
         HTMLBody.code(for: section)
@@ -34,7 +34,7 @@ extension Theme where Site == TheInkedEngineerWebsite {
     func makeItemHTML(for item: Item<TheInkedEngineerWebsite>, context: PublishingContext<TheInkedEngineerWebsite>) throws -> HTML {
       HTML(
         .lang(context.site.language),
-        .head(for: item, on: context.site, stylesheetPaths: ["/styles.css", "/articles.css"]),
+        .head(for: item, on: context.site, stylesheetPaths: ["/styles.css", "/articles.css"], rssFeedPath: "/rss"),
         .articlesFonts(),
         .plausible(),
         HTMLBody.code(for: item)
