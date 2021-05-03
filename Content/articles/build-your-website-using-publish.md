@@ -102,7 +102,7 @@ try MyWebsite().publish(withTheme: .foundation)
 ## Creating a custom theme
 
 Foundation is ok. However, you'd would want your website to have its own feel and look. That's where creating your own theme comes into place. \
-A theme requires two parameters to be created: an `htmlFactory` and a `resourcePath`. The latter is self explanatory. It basically requires an array of strings pointing to the relative paths of the resources to incluse (`CSS` files). \
+A theme requires two parameters to be created: an `htmlFactory` and a `resourcePath`. The latter is self explanatory. It basically requires an array of strings pointing to the relative paths of the resources to include (`CSS` files). \
 The `htmlFactory` on the other hand is slightly more complicated. It should be an instance of an object (ideally a `Struct`) that conforms to `HtmlFactory` and implements the needed methods.
 
 - `func makeIndexHTML(index: Index, context: PublishingContext<TheInkedEngineerWebsite>) throws -> HTML` is required and should compose the code to generate the `HTML` code for the home page.
@@ -146,7 +146,7 @@ static func externalLink(_ nodes: Node<HTML.AnchorContext>...) -> Self {
 }
 ```
 
-- Use an `enum` to list all your `CSS` classes. It will reduce the possibility of a type. If you do so, the code snippet below will come in handy:
+- Use an `enum` to list all your `CSS` classes. It will reduce the possibility of a typo. If you do so, the code snippet below will come in handy:
 
 ```
 extension Node where Context: HTMLContext {
