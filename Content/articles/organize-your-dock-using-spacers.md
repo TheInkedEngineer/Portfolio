@@ -8,7 +8,7 @@ A simple way to organize the dock in groups of apps is using a white space as sh
 
 <img src="/images/articles/organize-your-dock-using-spacers/example.png" alt="Visual example of dock with space" width="100%"/> 
 
-Run the following command:
+Open your `Terminal` app then past and run the following command:
 
 ```bash
 defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock
