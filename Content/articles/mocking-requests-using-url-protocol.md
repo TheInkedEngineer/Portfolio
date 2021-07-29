@@ -248,7 +248,7 @@ There are different ways to go about using mock data in an iOS application. Belo
 
 Having a local server is one of the most common ways to mock requests and their appropriate responses. There are a lot of applications that make that process painless. 
 
-> One of these applications is [Mocka](https://github.com/wise-emotions/mocka) and application I worked on alongside my team at Telepass. It's open source, make sure to try it out.
+> One of these applications is <a href="https://github.com/wise-emotions/mocka" target="_blank">Mocka</a> and application I worked on alongside my team at Telepass. It's open source, make sure to try it out.
 
 There are plenty of alternatives that can accomodate your language choice and preferences. They are usually easy to set up, and offer different ranges of flexibility.
 
@@ -260,6 +260,6 @@ You may know it from the famous `#if DEBUG`. We can use the if compile directive
 
 ## Thank you
 
-- [Fabrizio Brancati](https://twitter.com/infinity4all) for helping out with the original version of `MockURLProtocol`.
+- <a href="https://twitter.com/infinity4all" target="_blank">Fabrizio Brancati</a> for helping out with the original version of `MockURLProtocol`.
 
-- [Riccardo Cipolleschi](https://riccardocipolleschi.medium.com) for proofreading the article.
+- <a href="https://riccardocipolleschi.medium.com" target="_blank">Riccardo Cipolleschi</a> for proofreading the article.
